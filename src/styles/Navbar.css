@@ -1,0 +1,42 @@
+/* src/components/Navbar.css */
+.navbar {
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;     
+  position: fixed;         /* Make navbar fixed at the top */
+  top: 0;
+  left: 0;                 /* Ensure it sticks to the left */
+  width: 100%;             /* Ensure the navbar spans the entire width */
+  background-color: #000000;
+  padding: 10px 0;
+  justify-content: center;
+  gap: 70px;
+  z-index: 1000;           /* Ensure it stays on top of other elements */
+  box-sizing: border-box;  /* Prevent overflow */
+  pointer-events: auto;    /* Allow interactions with the navbar */
+}
+ 
+/* Prevent content from being hidden behind the navbar */
+body {
+  padding-top: 60px;  /* Adjust padding to account for the fixed navbar height */
+}
+	
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #c5a00c;
+  color: white;
+}
+
+.active {
+  color: white;
+  background-color: #343434;
+}

@@ -1,0 +1,45 @@
+/* src/pages/SelectSubjectPage.css */
+
+/* Container for the entire page */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Container for the dropdown */
+  .select-container {
+    margin: 20px 0;
+  }
+  
+  /* Styling for the dropdown */
+  .subject-dropdown {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffcc00; /* Yellow background */
+    color: #333; /* Dark text */
+    width: 250px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the start button */
+  .start-button {
+    font-size: 1.5em;
+    padding: 12px 20px;
+    background-color: #ffcc00; /* Yellow background */
+    color: #333; /* Dark text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the start button */
+  .start-button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }
+  

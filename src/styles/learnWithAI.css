@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c; /* Dark background */
+    color: white; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 30px 0; /* Spacing at the top */
+    overflow-y: auto; /* Entire page scrollable */
+  }
+  
+  .title{
+    top: 80px;
+  }
+  /* Header */
+  h1 {
+    color: #000000; /* Dark yellow */
+    font-size: 2.5em;
+    font-weight: 600;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  /* Main content */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70;
+    max-width: 900px; /* Wider layout */
+    margin-top: 100px; /* Allow space for header */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea Styling */
+  textarea {
+    width: 1000px;
+    max-width: 900px;
+    padding: 15px;
+    margin: 15px auto;
+    border: 2px solid #f3d900; /* Yellow border */
+    background-color: #444;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8px;
+    resize: vertical;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  .click-button{
+    font-size: 18px;
+  }
+
+  /* Button Styling */
+  button {
+    padding: 15px 30px;
+    background-color: #f3d900; /* Dark yellow */
+    border: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  button:hover {
+    background-color: #d8b400; /* Lighter yellow on hover */
+    transform: translateY(-3px); /* Hover effect */
+  }
+  
+  button:active {
+    background-color: #c79a00;
+    transform: translateY(0);
+  }
+  
+  /* Loading and Error */
+  #loading {
+    color: #f3d900;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    display: none;
+  }
+  
+  #error {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Suggestions Box */
+  #suggestions {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: left;
+    margin: 30px auto;
+    white-space: pre-wrap; /* Ensures that the text is properly formatted */
+    font-family: monospace; /* Optional: gives a code-like font style for better visibility */
+    word-wrap: break-word;  /* Makes sure the text wraps nicely in narrow screens */    
+  }
+  

@@ -1,0 +1,88 @@
+/* src/pages/StudentPage.css */
+html, body {
+  background-color: #f8f9fa !important; /* Light background color */
+  color: #343a40 !important; /* Dark text for readability */
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 100vh; /* Ensure full height of the page */
+}
+
+.left-side {
+  flex: 1;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.student-buttons-container {
+  display: grid; /* Use CSS grid to arrange buttons */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 20px; /* Space between buttons */
+  justify-items: center; /* Center buttons in their grid cells */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.student-button {
+  font-size: 1.2rem !important; /* Adjust font size to fit longer text */
+  padding: 20px 30px !important; /* Increase padding for larger buttons */
+  border-radius: 50% !important; /* Circular buttons */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  background-color: #007bff !important; /* Blue button background */
+  color: #fff !important; /* White text */
+  border: none !important;
+  width: 200px !important; /* Set the button width explicitly */
+  height: 200px !important; /* Fixed height for circular shape */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  cursor: pointer !important; /* Pointer cursor on hover */
+}
+
+.student-button:hover {
+  background-color: #0056b3 !important; /* Darker blue on hover */
+  transform: scale(1.1) !important; /* Slight scaling on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important; /* Subtle shadow effect */
+}
+
+.student-button:focus {
+  outline: none !important; /* Remove the focus outline */
+}
+
+.student-button:active {
+  transform: scale(1.05) !important; /* Slightly reduce scale when button is clicked */
+}
+
+.student-button span {
+  font-weight: 600 !important;
+  text-align: center !important; /* Center text within the button */
+}
+
+.title {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+img.student-image {
+  max-width: 80%; /* Make image responsive */
+  height: auto;
+  border-radius: 50%; /* Rounded image */
+}

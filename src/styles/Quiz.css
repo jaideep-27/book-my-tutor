@@ -1,0 +1,124 @@
+/* Ensure the page uses full viewport height and adds padding for navbar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Allow scrolling on the whole page */
+}
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif; /* Adding a clean font */
+  display: flex;
+  flex-direction: column; /* Ensure the content flows from top to bottom */
+  padding-top: 80px; /* Add 80px padding at the top to make space for the navbar */
+}
+
+/* Centering and adjusting the quiz container */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keep the content aligned to the top */
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Maximum width for quiz container */
+  flex-grow: 1; /* Allow the container to expand and take available space */
+}
+
+/* Styling for quiz heading */
+.quiz-heading, .quiz-question {
+  width: 100%;
+  max-width: 600px; /* Set a maximum width for heading and question */
+  margin: 0 auto; /* Center the heading and question */
+}
+
+.quiz-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f39c12; /* Gold color for heading */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for better visibility */
+  text-align: center;
+}
+
+.quiz-question {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Styling for quiz options */
+.quiz-options {
+  width: 100%;
+  max-width: 500px; /* Center the options and limit their width */
+  margin: 0 auto; /* Center the options */
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+  align-items: center;
+}
+
+.quiz-option {
+  font-size: 1.2rem;
+  padding: 14px 20px;
+  border-radius: 30px; /* More rounded corners */
+  margin: 10px 0;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer; /* Change the cursor to pointer on hover */
+  width: 100%; /* Ensure options take full width within the container */
+  max-width: 400px; /* Limit width to keep options aligned */
+}
+
+.quiz-option:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.quiz-option:focus {
+  outline: none;
+}
+
+.quiz-completed {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quiz-completed h4 {
+  font-size: 1.5rem;
+  color: #f39c12; /* Gold color for the score */
+}
+
+.quiz-completed button {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Round button for restart */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-completed button:hover {
+  background-color: #e67e22; /* Darker gold on hover */
+}
+
+.quiz-completed button:focus {
+  outline: none;
+}
+
+/* Ensure images scale correctly */
+img {
+  display: block;
+  margin: 20px auto; /* Center images horizontally */
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}

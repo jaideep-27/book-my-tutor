@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book My Tutor</title>
+
+  <!-- Firebase SDKs (update version numbers as needed) -->
+  <script defer src="/__/firebase/11.0.1/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/11.0.1/firebase-performance-compat.js"></script>
+
+  <!-- Initialize Firebase after loading SDKs -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <!-- External Stylesheets -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- External styles -->
+
+  <style>
+    body { 
+      background: #ECEFF1; 
+      color: rgba(0,0,0,0.87); 
+      font-family: 'Roboto', Helvetica, Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    #message { 
+      background: white; 
+      max-width: 360px; 
+      margin: 100px auto 16px; 
+      padding: 32px 24px; 
+      border-radius: 3px; 
+    }
+    
+    #message h2 { 
+      color: #ffa100; 
+      font-weight: bold; 
+      font-size: 16px; 
+      margin: 0 0 8px; 
+    }
+    
+    #message h1 { 
+      font-size: 22px; 
+      font-weight: 300; 
+      color: rgba(0,0,0,0.6); 
+      margin: 0 0 16px; 
+    }
+    
+    #message p { 
+      line-height: 140%; 
+      margin: 16px 0 24px; 
+      font-size: 14px; 
+    }
+    
+    #message a { 
+      display: block; 
+      text-align: center; 
+      background: #039be5; 
+      text-transform: uppercase; 
+      text-decoration: none; 
+      color: white; 
+      padding: 16px; 
+      border-radius: 4px; 
+    }
+
+    #message, #message a { 
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+    }
+
+    #load { 
+      color: rgba(0,0,0,0.4); 
+      text-align: center; 
+      font-size: 13px; 
+    }
+
+    @media (max-width: 600px) {
+      body, #message { 
+        margin-top: 0; 
+        background: white; 
+        box-shadow: none; 
+      }
+      body { 
+        border-top: 16px solid #ffa100; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Embedded Chatbot Script -->
+  <script>
+    window.embeddedChatbotConfig = {
+      chatbotId: "WrMRrixD6xXDTkF4oF0B5",
+      domain: "www.chatbase.co"
+    }
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="WrMRrixD6xXDTkF4oF0B5"
+    domain="www.chatbase.co"
+    defer>
+  </script>
+
+  <!-- React root element where the app will render -->
+  <div id="root"></div>
+
+  <!-- Fallback content for Firebase Hosting setup -->
+  <div id="message" style="display: none;">
+    <h2>Welcome</h2>
+    <h1>Firebase Hosting Setup Complete</h1>
+    <p>You're seeing this because you've successfully set up Firebase Hosting. Now it's time to go build something extraordinary!</p>
+    <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  </div>
+  <p id="load">&hellip;</p>
+
+  <script>
+    // Temporarily suppress all errors and logs
+    const originalConsoleError = console.error;
+    const originalConsoleWarn = console.warn;
+    const originalConsoleLog = console.log;
+
+    // Suppress console errors, warnings, and logs
+    console.error = () => {};
+    console.warn = () => {};
+    console.log = () => {};
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+
+      // Ensure that Firebase is loaded before using it
+      if (typeof firebase !== 'undefined' && firebase.app) {
+        let app = firebase.app();
+        let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        
+        // Hide the fallback message once Firebase is initialized
+        document.getElementById("message").style.display = "none";
+      } else {
+        loadEl.textContent = "";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scroll bars */
+}
+
+.background-image {
+  background-image: url('../assets/home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-signin-button {
+  width: 13.8%;
+  height: 6%;
+  position: absolute;
+  top: 80px;
+  right: 60px;
+  padding: 8px 16px; /* Adjust padding for better fit */
+  font-size: 1rem; /* Set a more reasonable font size */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text */
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: bounce 1.5s infinite; /* Looping bounce animation */
+}
+
+
+.google-signin-button:hover {
+  background-color: #818181;
+}
+
+.google-logo {
+  width: 1em; /* Same as font size */
+  height: 1em; /* Maintain aspect ratio */
+  margin-right: 8px; /* Space between logo and text */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-5px); /* Move up by 5px */
+  }
+}

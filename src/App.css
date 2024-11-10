@@ -1,0 +1,164 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif; 
+  height: 100%;               /* Make sure the body and html take up the full height */
+  overflow: hidden;           /* Disable scrolling for both html and body */
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  background-color: #f8f9fa;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  min-height: 100vh;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding-top: 60px;  /* Prevent content from hiding behind the navbar */
+}
+
+h1, h2, h3 {
+  color: #212529;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* General Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0069d9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Container for Centering Content */
+.container {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+/* Page Specific Styling */
+.homepage,
+.role-selection,
+.instructor-page,
+.student-page,
+.booking-confirmation-page {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.page-content {
+  width: 100%;
+  position: relative;
+  margin-top: 60px; /* Offset the content to prevent overlap with fixed navbar */
+}
+
+/* Role Selection Page */
+.role-selection .role-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.role-selection .role-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 45%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-selection .role-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.role-selection .role-icon {
+  font-size: 4rem;
+  color: #007bff;
+  margin-bottom: 1.2rem;
+}
+
+.role-selection .role-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Instructor & Student Page */
+.list-container {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  background-color: #e9ecef;
+  margin: 0.75rem 0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.list-item .book-button {
+  background-color: #28a745;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+}
+
+.list-item .book-button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-top: 2rem;
+}

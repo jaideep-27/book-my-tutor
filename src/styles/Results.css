@@ -1,0 +1,59 @@
+body {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* White text color */
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; /* Ensure emoji font */
+}
+
+.result-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.highlight {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.badge-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medal-emoji {
+    font-size: 4rem; /* Larger emoji size */
+    margin-bottom: 15px;
+    line-height: 1; /* Ensures the emoji line height is correct */
+}
+
+.badge-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.start-new-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+}
+
+.start-new-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.start-new-btn:focus {
+    outline: none;
+}
