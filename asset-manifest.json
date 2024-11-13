@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jaideep-27/book-tutor/static/css/main.3388c99b.css",
+    "main.js": "/jaideep-27/book-tutor/static/js/main.84c96b75.js",
+    "static/js/488.0305b36e.chunk.js": "/jaideep-27/book-tutor/static/js/488.0305b36e.chunk.js",
+    "static/media/shivaram.png": "/jaideep-27/book-tutor/static/media/shivaram.a3f58e6fb98e80e4d3d9.png",
+    "static/media/home.png": "/jaideep-27/book-tutor/static/media/home.e977428656c9ebc5c27c.png",
+    "static/media/role-selection.png": "/jaideep-27/book-tutor/static/media/role-selection.6f2b155fca270cd5f6f4.png",
+    "static/media/knapsack.png": "/jaideep-27/book-tutor/static/media/knapsack.5ae4f66c356ea81c7bca.png",
+    "static/media/nqueen.png": "/jaideep-27/book-tutor/static/media/nqueen.779e6bd563fc2c20ddf8.png",
+    "static/media/support.png": "/jaideep-27/book-tutor/static/media/support.290c667c73f767b480e4.png",
+    "static/media/instructor.png": "/jaideep-27/book-tutor/static/media/instructor.dc8089a7411bb9f1cc54.png",
+    "static/media/student.png": "/jaideep-27/book-tutor/static/media/student.15faec066231286389ca.png",
+    "static/media/google.png": "/jaideep-27/book-tutor/static/media/google.cadee8cdb0c0afb1a713.png",
+    "static/media/button.png": "/jaideep-27/book-tutor/static/media/button.1eda696ff558ac9f6c2f.png",
+    "static/media/ncolouring.png": "/jaideep-27/book-tutor/static/media/ncolouring.9e0405b4c708a08c10cc.png",
+    "index.html": "/jaideep-27/book-tutor/index.html",
+    "main.3388c99b.css.map": "/jaideep-27/book-tutor/static/css/main.3388c99b.css.map",
+    "main.84c96b75.js.map": "/jaideep-27/book-tutor/static/js/main.84c96b75.js.map",
+    "488.0305b36e.chunk.js.map": "/jaideep-27/book-tutor/static/js/488.0305b36e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3388c99b.css",
+    "static/js/main.84c96b75.js"
+  ]
+}
