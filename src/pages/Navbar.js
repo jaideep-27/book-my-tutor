@@ -9,15 +9,6 @@ function Navbar() {
       <NavLink to="/" className="nav-link">
         Home
       </NavLink>
-      <NavLink to="/role-selection" className="nav-link">
-        Role Selection
-      </NavLink>
-      <NavLink to="/instructor" className="nav-link">
-        Instructor
-      </NavLink>
-      <NavLink to="/student" className="nav-link">
-        Student
-      </NavLink>
       <NavLink to="/support-us" className="nav-link">
         Support Us
       </NavLink>

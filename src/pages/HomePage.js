@@ -3,7 +3,7 @@ import React from 'react';
 import { auth, db } from '../config/firebase';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
 import '../styles/home.css';
 import googleLogo from '../assets/google.png';
 
@@ -16,12 +16,19 @@ function HomePage() {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
 
-      // Save the user data to Firestore
-      await setDoc(doc(db, 'users', user.uid), {
-        name: user.displayName,
-        email: user.email,
-        createdAt: serverTimestamp(),
-      });
+      // Check if the user is already in the users collection
+      const userRef = doc(db, 'users', user.uid);
+      const userSnapshot = await getDoc(userRef);
+
+      if (!userSnapshot.exists()) {
+        // Create new user in Firestore
+        await setDoc(userRef, {
+          name: user.displayName,
+          email: user.email,
+          role: "student",  // Default role
+          createdAt: serverTimestamp(),
+        });
+      }
 
       navigate("/role-selection"); // Redirect after sign-in
     } catch (error) {

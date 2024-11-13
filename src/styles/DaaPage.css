@@ -1,49 +1,63 @@
 /* Main container styling */
 .daa-page {
-    max-width: 800px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    margin-top: 20px;
-  }
-  
-  /* Title styling */
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  /* Button container styling */
-  .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  /* Game button styling */
-  .game-button {
-    font-size: 1.2rem;
-    width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .game-button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Image styling */
-  .button-image {
-    width: 80px; /* Fixed width */
-    height: 80px; /* Fixed height */
-    margin-bottom: 10px;
-  }
-  
-  /* Error message styling */
-  .error-message {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Game button styling */
+.game-button {
+  font-size: 1.2rem;
+  width: 200px;
+  height: 150px; /* Set a fixed height to contain both image and text */
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.game-button:hover {
+  background-color: #45a049;
+}
+
+/* Image styling */
+.button-image {
+  width: 120px; /* Adjust width */
+  height: 100px; /* Adjust height */
+  margin-bottom: 5px; /* Space between image and text */
+}
+
+/* Error message styling */
+.error-message {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
